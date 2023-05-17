@@ -1,0 +1,369 @@
+[
+    {
+        "id": "fd14e839a28512c5",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4d5da73d75994a4d",
+        "type": "mqtt out",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "topic": "home/window_ctrl/blinds",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a646c8ce33d8eb58",
+        "x": 610,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "036d9c75055d331f",
+        "type": "inject",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "70",
+        "payloadType": "num",
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "4d5da73d75994a4d"
+            ]
+        ]
+    },
+    {
+        "id": "938bdad4b945b5ef",
+        "type": "inject",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "100",
+        "payloadType": "num",
+        "x": 290,
+        "y": 160,
+        "wires": [
+            [
+                "4d5da73d75994a4d"
+            ]
+        ]
+    },
+    {
+        "id": "b8f40cf1782d065b",
+        "type": "comment",
+        "z": "fd14e839a28512c5",
+        "name": "OPEN",
+        "info": "",
+        "x": 110,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f06fdf5c6c5687c2",
+        "type": "comment",
+        "z": "fd14e839a28512c5",
+        "name": "CLOSE",
+        "info": "",
+        "x": 110,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "4df0878f4c16364b",
+        "type": "mqtt out",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "topic": "home/window_ctrl/window",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a646c8ce33d8eb58",
+        "x": 620,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "4fed4398e2babc5b",
+        "type": "inject",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "90",
+        "payloadType": "num",
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "4df0878f4c16364b"
+            ]
+        ]
+    },
+    {
+        "id": "76ddb576e66a9497",
+        "type": "inject",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "175",
+        "payloadType": "num",
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "4df0878f4c16364b"
+            ]
+        ]
+    },
+    {
+        "id": "a0f9015e36ebf011",
+        "type": "mqtt out",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "topic": "home/devices/heat_max/heater",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a646c8ce33d8eb58",
+        "x": 630,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "20ee7a34fbc093a3",
+        "type": "inject",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "a0f9015e36ebf011"
+            ]
+        ]
+    },
+    {
+        "id": "61fd37aafc14f3b2",
+        "type": "inject",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "180",
+        "payloadType": "num",
+        "x": 290,
+        "y": 500,
+        "wires": [
+            [
+                "a0f9015e36ebf011"
+            ]
+        ]
+    },
+    {
+        "id": "a891ab5aa16eeb91",
+        "type": "comment",
+        "z": "fd14e839a28512c5",
+        "name": "OPEN",
+        "info": "",
+        "x": 110,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "cf54839e56fbbce2",
+        "type": "comment",
+        "z": "fd14e839a28512c5",
+        "name": "CLOSE",
+        "info": "",
+        "x": 110,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "30250e274b88e6be",
+        "type": "mqtt out",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "topic": "home/devices/heat_max/led",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a646c8ce33d8eb58",
+        "x": 620,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "9169a918c3219c63",
+        "type": "inject",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 290,
+        "y": 600,
+        "wires": [
+            [
+                "30250e274b88e6be"
+            ]
+        ]
+    },
+    {
+        "id": "894bfe6ae2425125",
+        "type": "inject",
+        "z": "fd14e839a28512c5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 290,
+        "y": 660,
+        "wires": [
+            [
+                "30250e274b88e6be"
+            ]
+        ]
+    },
+    {
+        "id": "ea9891783c727e43",
+        "type": "comment",
+        "z": "fd14e839a28512c5",
+        "name": "OFF",
+        "info": "",
+        "x": 110,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "d6bdc3c30d00b93c",
+        "type": "comment",
+        "z": "fd14e839a28512c5",
+        "name": "ON",
+        "info": "",
+        "x": 110,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "a646c8ce33d8eb58",
+        "type": "mqtt-broker",
+        "name": "MQTT Docker",
+        "broker": "192.168.241.27",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
